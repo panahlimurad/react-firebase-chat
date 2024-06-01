@@ -1,0 +1,56 @@
+.title{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #e6e5ec;
+}
+
+.link{
+    color: #ad4e43;
+}
+
+.text{
+    margin-top: 10px;
+    color: #848589;
+}
+
+.input{
+    background-color: #373843;
+    height: 70px;
+    width: 100%;
+    border-radius:6px;
+    text-indent: 10px;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+
+}
+
+.btn{
+    background-color: #e14216;
+    border-radius: 6px;
+    height: 60px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #a02a09;
+    }
+}
+
+.btnGoogle{
+    background-color: #e14216;
+    border-radius: 6px;
+    height: 60px;
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #a02a09;
+    }
+}
