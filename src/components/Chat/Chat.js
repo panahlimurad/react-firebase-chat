@@ -53,16 +53,15 @@ function Chat() {
 
   const sendMessage = async () => {
     await addDoc(collection(db, "messages"), {
-      uid: user.uid,
-      photoUrl: user.photoURL,
-      displayName: user.displayName,
+      uid: user?.uid,
+      photoUrl: user?.photoURL,
+      displayName: user?.displayName,
       text: newMessage,
       timestamp: serverTimestamp(),
     });
     setNewMessage("");
   };
 
-  console.log(messages);
 
   return (
     <div className="h-[100vh] bg-[#373843]">
@@ -72,11 +71,11 @@ function Chat() {
             <>
               <div key={msg?.id} className={`${styles.message} ${msg.data.uid === user?.uid ? styles.user : styles.other}`}>
               <p className="text-[#fff] text-[8px]">
-                {new Date(msg.data.timestamp?.toDate()).toLocaleString()}
+                {new Date(msg?.data?.timestamp?.toDate()).toLocaleString()}
               </p>
                 <p className="text-[8px]">{msg.data.displayName}</p>
                 <p>{msg?.data?.text}</p>
-                {msg.data.photoUrl ? (
+                {msg?.data?.photoUrl ? (
                   <img src={msg?.data?.photoUrl} alt="user" />
                 ) : (
                   <AccountCircleIcon
