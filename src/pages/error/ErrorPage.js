@@ -1,7 +1,7 @@
 import React from 'react'
 import ErrorPage from '../../components/ErrorPage/ErrorPage'
 
-function index() {
+function EroorPage() {
   return (
     <div>
         <ErrorPage/>
@@ -9,4 +9,4 @@ function index() {
   )
 }
 
-export default index
+export default EroorPage

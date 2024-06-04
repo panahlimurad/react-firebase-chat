@@ -1,7 +1,7 @@
 import React from 'react'
 import CreateAccount from '../../components/CreateAccount/CreateAccount'
 
-function index() {
+function CreateAccountPage() {
   return (
     <div>
         <CreateAccount/>
@@ -9,4 +9,4 @@ function index() {
   )
 }
 
-export default index
+export default CreateAccountPage

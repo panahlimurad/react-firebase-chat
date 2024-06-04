@@ -1,7 +1,7 @@
 import React from 'react'
 import Chat from '../../components/Chat/Chat'
 
-function index() {
+function ChatPage() {
   return (
     <div>
         <Chat/>
@@ -9,4 +9,4 @@ function index() {
   )
 }
 
-export default index
+export default ChatPage

@@ -1,18 +1,18 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import CreateAccount from '../../components/CreateAccount/CreateAccount'
-import Login from '../../components/Login/Login'
 import ErrorPage from '../../components/ErrorPage/ErrorPage'
-import Chat from '../../components/Chat/Chat'
+import LoginPage from '../login/LoginPage'
+import CreateAccountPage from '../create_acount/CreateAccountPage'
+import ChatPage from '../chat/ChatPage'
 
 function Layouts() {
   return (
     <div>
         <Routes>
-            <Route path='/' element={<Login/>}></Route>
-            <Route path='/create_account' element={<CreateAccount/>}></Route>
+            <Route path='/' element={<LoginPage/>}></Route>
+            <Route path='/create_account' element={<CreateAccountPage/>}></Route>
             <Route path='/error' element={<ErrorPage/>}></Route>
-            <Route path='/chat' element={<Chat/>}></Route>
+            <Route path='/chat' element={<ChatPage/>}></Route>
         </Routes>
     </div>
   )
